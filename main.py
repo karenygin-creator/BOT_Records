@@ -6,6 +6,8 @@ from dotenv import load_dotenv
 from aiogram import Bot, Dispatcher, F
 from db.database import engine, Base
 from db import models
+from handlers.booking import router as booking_router
+from handlers.start import router as start_router
 from middlewares.db import DbSessionMiddleware
 
 load_dotenv()
@@ -19,7 +21,9 @@ async def main() -> None:
     await create_tables()
     logging.basicConfig(level=logging.INFO)
     bot = Bot(token=TOKEN)
-    dp.update.middleware(DbSessionMiddleware)
+    dp.update.middleware(DbSessionMiddleware())
+    dp.include_router(start_router)
+    dp.include_router(booking_router)
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
