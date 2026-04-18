@@ -1,3 +1,5 @@
+from datetime import time
+
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
@@ -33,3 +35,14 @@ async def add_lesson(session: AsyncSession,name_lesson:str):
     await session.commit()
     await session.refresh(lesson)
     return lesson
+
+async def get_lesson_by_id(session: AsyncSession,lesson_id:int):
+    result=await session.execute(select(Lesson).where(Lesson.id==lesson_id))
+    return result.scalar_one_or_none()
+
+async def generate_time_slots():
+    slots=[]
+    for i in range(9,21):
+        slots.append(time(i,0))
+        slots.append(time(i,30))
+    return slots
