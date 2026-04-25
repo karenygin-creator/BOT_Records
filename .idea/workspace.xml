@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83c2e02f-9371-40cf-b68f-74a33e306fd9" name="Changes" comment="menu_kb">
-      <change afterPath="$PROJECT_DIR$/handlers/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keyboards/calendar_kb.py" afterDir="false" />
+    <list default="true" id="83c2e02f-9371-40cf-b68f-74a33e306fd9" name="Changes" comment="calendar_time">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/requests.py" beforeDir="false" afterPath="$PROJECT_DIR$/db/requests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/handlers/booking.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/booking.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keyboards/booking_kb.py" beforeDir="false" afterPath="$PROJECT_DIR$/keyboards/booking_kb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keyboards/calendar_kb.py" beforeDir="false" afterPath="$PROJECT_DIR$/keyboards/calendar_kb.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +112,9 @@
       <workItem from="1774711014199" duration="67000" />
       <workItem from="1775898299617" duration="10477000" />
       <workItem from="1775921850651" duration="29000" />
-      <workItem from="1776503410959" duration="8486000" />
+      <workItem from="1776503410959" duration="10060000" />
+      <workItem from="1776525130092" duration="10000" />
+      <workItem from="1777108074931" duration="9181000" />
     </task>
     <task id="LOCAL-00001" summary="bot_bd">
       <option name="closed" value="true" />
@@ -129,19 +132,39 @@
       <option name="project" value="LOCAL" />
       <updated>1775908734666</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="calendar_time">
+      <option name="closed" value="true" />
+      <created>1776513659577</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1776513659577</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="bot_bd" />
     <MESSAGE value="menu_kb" />
-    <option name="LAST_COMMIT_MESSAGE" value="menu_kb" />
+    <MESSAGE value="calendar_time" />
+    <option name="LAST_COMMIT_MESSAGE" value="calendar_time" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Bot_records$start.coverage" NAME="start Coverage Results" MODIFIED="1775906631721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/handlers" />
-    <SUITE FILE_PATH="coverage/Bot_records$main.coverage" NAME="main Coverage Results" MODIFIED="1776511811453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Bot_records$main.coverage" NAME="main Coverage Results" MODIFIED="1777117441062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

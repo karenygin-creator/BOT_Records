@@ -9,9 +9,9 @@ def get_calendar(year:int|None=None,month:int|None=None):
     month=month or now.month
     keyboards=[]
     keyboards.append([
-        InlineKeyboardButton(text="◀️",callback_data=f"cal_prev:{year}:{month}"),
+        InlineKeyboardButton(text="◀️",callback_data=f"cal_prev.{year}.{month}"),
         InlineKeyboardButton(text=f"{calendar.month_name[month]} {year}",callback_data="ignore"),
-        InlineKeyboardButton(text="▶️",callback_data=f"cal_next:{year}:{month}")
+        InlineKeyboardButton(text="▶️",callback_data=f"cal_next.{year}.{month}")
     ])
     weekdays=["Пн","Вт","Ср","Чт","Пт","Сб","Вс"]
     keyboards.append([InlineKeyboardButton(text=day,callback_data="ignore")for day in weekdays])
@@ -26,7 +26,7 @@ def get_calendar(year:int|None=None,month:int|None=None):
                 if result<date.today():
                     row.append(InlineKeyboardButton(text=str(day_num),callback_data="ignore"))
                 else:
-                    row.append(InlineKeyboardButton(text=str(day_num),callback_data=f"cal_day:{year}-{month}-{day_num}"))
+                    row.append(InlineKeyboardButton(text=str(day_num),callback_data=f"cal_day.{year}.{month}.{day_num}"))
 
         keyboards.append(row)
     return InlineKeyboardMarkup(inline_keyboard=keyboards)
